@@ -1,78 +1,16 @@
-/* Diagnostic Styling */
-* {
-    outline: 2px dotted gray;
-  } 
-  
-  /* temp background color */
+/* temp background color */
   body {
-      background: rgb(87, 87, 87);
+      background: rgb(29, 29, 29);
   }
     
   /* vertical and horizontal centering */
   body {
-    display: grid;
-    place-content: center;
-    height: 100vh;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f5f5f5;
   }
 
   /* SVG Styling */
-  #rocket{
-    width:250px;
-    height:250px;
-    background-color: coral;
-    animation-name: colorChange;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-  
-  #rocket:active{
-    animation-name: glow;
-    animation-duration: 2s;
-  }
-  
-  @keyframes slideLeft{
-    from{transform: translateX(100%);}
-  }
-  
-  @keyframes slideRight{
-    to{transform: translateX(100%);}
-  }
-  
-  @keyframes slideUp{
-    from{transform: translateY(100%);}
-  }
-  
-  @keyframes slideDown{
-    to{transform: translateY(100%);}
-  }
-  
-  @keyframes slideLeft{
-    from{transform: translateX(100%);}
-  }
-  
-  @keyframes rotate{
-    50%{transform: rotateZ(360deg);}
-  }
-  
-  @keyframes grow{
-    50%{transform: scale(2, 2);}
-  }
-  
-  @keyframes shrink{
-    50%{transform: scale(0.5, 0.5);}
-  }
-  
-  @keyframes fade{
-    50%{opacity:0;}
-  }
-  
-  @keyframes colorChange{
-    0%{background-color:pink;}
-    33%{background-color:purple;}
-    66%{background-color:cyan;}
-    100%{background-color:green;}
-  }
-  
-  @keyframes glow{
-    50%{box-shadow: 0px 0px 50px yellow;}
-  }
